@@ -7,16 +7,16 @@
    */
   function handleClick(key) {
     if (key.match(/=|Enter/)) {
-      try {
-        tablo = eval(tablo);
-      } catch {
-        let oldValue = tablo;
-        let newValue = 'недопустимое выражение';
-        tablo = newValue;
-        setTimeout(() => {
-          tablo = oldValue;
-        }, 1500);
-      }
+      tablo = eval(tablo);
+      // try {
+      // } catch {
+      //   let oldValue = tablo;
+      //   let newValue = 'недопустимое выражение';
+      //   tablo = newValue;
+      //   setTimeout(() => {
+      //     tablo = oldValue;
+      //   }, 1500);
+      // }
     } else if (key === 'C') {
       tablo = '';
     } else if (key.match(/CE|Backspace/)) {
