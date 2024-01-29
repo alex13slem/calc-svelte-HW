@@ -8,15 +8,6 @@
   function handleClick(key) {
     if (key.match(/=|Enter/)) {
       tablo = eval(tablo);
-      // try {
-      // } catch {
-      //   let oldValue = tablo;
-      //   let newValue = 'недопустимое выражение';
-      //   tablo = newValue;
-      //   setTimeout(() => {
-      //     tablo = oldValue;
-      //   }, 1500);
-      // }
     } else if (key === 'C') {
       tablo = '';
     } else if (key.match(/CE|Backspace/)) {
@@ -43,6 +34,16 @@
     {/each}
   </div>
 </main>
+
+<!-- // try {
+  // } catch {
+  //   let oldValue = tablo;
+  //   let newValue = 'недопустимое выражение';
+  //   tablo = newValue;
+  //   setTimeout(() => {
+  //     tablo = oldValue;
+  //   }, 1500);
+  // } -->
 
 <style>
   .calculator {
